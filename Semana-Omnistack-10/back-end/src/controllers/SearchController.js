@@ -3,8 +3,10 @@ const ParseStringAsArray = require('../utils/parseStringAsArray');
 
 
 module.exports = {
+    //Returns all developers within distance (in meters) that matches techs search criteria.
     async index(request, response) {
         let { latitude, longitude, techs = "None", distance = 2500} = request.query;
+        
         if (typeof distance !== 'number' && distance.length == 0) {
             distance = 2500;
         }

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './styles.css';
 
 
+
 //Mover para App.js e utilizar event listener;
 async function handleDeleteDev(dev_id) {
     await API.delete('/devs', {
@@ -14,8 +15,8 @@ async function handleDeleteDev(dev_id) {
         },
     }
     )
-    window.location.reload(); //Refazer usando event listener;
-}
+     window.location.reload(); //Refazer usando event listener;
+  }
 
 //Mover para App.js e utilizar event listener;
 async function handleEditDev(dev_id) {
@@ -25,6 +26,7 @@ async function handleEditDev(dev_id) {
 
 //
 function DevItem({ dev }) {
+    
     return (
         <li key={dev._id} className="dev-item">
             <header>

@@ -1,6 +1,7 @@
 const axios = require('axios');
 const Dev = require('../models/dev');
 const ParseStringAsArray = require('../utils/parseStringAsArray');
+const { findConnections } = require('../websocket');
 
 
 // Common database methods : index, store, update and destroy
@@ -39,6 +40,8 @@ module.exports = {
             techs: techs_array,
             location,
         });
+
+
     
         console.log(name, avatar_url, bio, github_username, _id);
         const newdev = await Dev.findOne({ github_username });

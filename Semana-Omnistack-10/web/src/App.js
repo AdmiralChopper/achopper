@@ -10,9 +10,13 @@ import DevForm from './components/DevForm/index'
 import toaster from 'toasted-notes';
 import 'toasted-notes/src/styles.css';
 
+
+
+
 function App() {
   const [devs, setDevs] = useState([]);
-   
+  
+  
   useEffect(() => {
     document.title = 'Dev Radar';
     
@@ -35,7 +39,6 @@ function App() {
       setDevs([...devs, response.data]);
     }    
   }
- 
 
   return (
 

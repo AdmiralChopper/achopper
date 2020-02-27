@@ -1,0 +1,159 @@
+#main {
+  color: #F3F3F3;
+  font-family: Poppins, sans-serif;
+}
+
+
+body {
+  z-index: 1;
+  background-image: url("https://w.wallhaven.cc/full/d5/wallhaven-d55rrj.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 180px 1fr;
+  grid-template-areas:
+    "header"
+    "form";
+}
+
+small {
+  font-size: 12px;
+}
+
+#filter {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  background-color: black;
+  opacity: 0.09;
+  z-index: 2;
+}
+
+#header {
+  grid-area: header;
+  width: auto;
+  height: auto;
+  margin: 20px 0px 20px 0px;
+  padding: auto;
+  z-index: 3;
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 00px;
+  font-size: 38px;
+}
+
+#description {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#form-container {
+  margin-top: -20px;
+  margin-bottom: -10px;
+  justify-self: center;
+  grid-area: form;
+  grid-row: 2 / 3;
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+  border-type: solid;
+  background-color: #2B2B49;
+  opacity: 0.7;
+  z-index: 3;
+}
+
+#survey-form {
+  margin: 25px 25px 25px 25px;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+#name, #email, #number {
+  margin-bottom: 10px;
+  height: 32px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0px px;
+  border-color: gray;
+}
+
+#dropdown {
+  margin-bottom: 10px;
+  height: 32px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0px 0px;
+  border-color: gray;
+}
+
+.input-question {
+ font-size: 20px;
+ margin-top: 15px;
+ margin-bottom: 5px;
+ justify-text: center;
+}
+
+
+
+input[type='radio'], input[type='checkbox'] {
+  margin: -1px 5px 0px 0px;
+  width: 15px;
+  height: 15px;
+
+}
+
+input[type='radio'], input[type='checkbox'], .button-label {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+#comments {
+  height: 140px;
+  width: 100%;
+  margin: 10px auto 10px auto;
+  border-radius: 7px;
+  border-width: 1px;
+  border-color: #black;
+  box-sizing: border-box;
+  z-index: 3;
+  resize: none;
+}
+
+#submit {
+  display: block;
+  margin: 10px auto 10px auto;
+  height: 30px;
+  width: 100%;
+  background-color: #37AF65;
+  color: white;
+  border-radius: 7px;
+  border-width: 0px;
+  border-color: #37AF65;
+  z-index: 3;
+  transition: background-color 0.5s ease-out;
+}
+
+#submit:hover {
+  background-color: #8b30db;
+  transition-duration: 0.5s;
+}
+
+
+@media (max-width: 650px) {
+  #form-container {
+    width: auto;
+  }
+}
+
+

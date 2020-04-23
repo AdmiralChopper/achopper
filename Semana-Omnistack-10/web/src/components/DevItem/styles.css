@@ -1,0 +1,65 @@
+li.dev-item {
+    background: #FFF;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    padding: 20px;
+}
+
+li.dev-item header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li.dev-item header img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+li.dev-item header .user-info {
+    margin-left: 10px;
+}
+
+li.dev-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+li.dev-item a {
+    color: #2195e2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+li.dev-item a:hover {
+    color: #212ee2
+}
+
+li.dev-item div.buttons {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+div.buttons button{
+    height: 28px;
+    width: 28px;
+    align-items: center;
+    border: 0;
+    margin: 0 3px;
+    border-radius: 50%;
+    user-select: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: #2195e2;
+    color: #FFF;
+}
+
+div.buttons button:disabled{
+    background: grey;
+}
+
+div.buttons button:hover:enabled {
+    background-color: #212ee2
+}

@@ -18,3 +18,5 @@ The response looks like:
                   "timestamp": "Youtube timestamp where the quote is spoken in m:ss format"
               }, ...]
 }
+
+Hosted GET endpoint: https://us-central1-greatmomentsofbrdramaturgyapi.cloudfunctions.net/app/quotes

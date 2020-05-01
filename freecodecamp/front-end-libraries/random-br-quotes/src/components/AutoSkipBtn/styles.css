@@ -1,0 +1,28 @@
+.toggle-autoskip {
+    padding: 5px;
+    outline: none;
+    font-size: 1em;
+    background: none;
+}
+
+.autoskip {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+
+.toggle-off {
+    color: rgb(180,0,0);
+}
+
+.toggle-off:hover {
+    color: red;
+}
+
+.toggle-on {
+    color: rgb(0,180,0);
+}
+
+.toggle-on:hover {
+    color: rgb(0,255,0);
+}

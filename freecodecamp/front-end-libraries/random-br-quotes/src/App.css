@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Titillium Web;
+  src: local('Titillium Web'), url('./Titillium_Web/TitilliumWeb-Light.ttf') format('ttf');
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: 'Titillium Web';
+  letter-spacing: 2px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+}
+
+.title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 3vh;
+  font-style: italic;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 1em;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 30vw;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: 1px;
+  border: 2px white dashed;
+  align-content: center;
+  background-color: rgba(20, 20, 180, 0.85);
+}
+
+.video-wrapper {
+  margin-right: auto;
+  margin-left: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 50vh;
+  padding: 15px;
+  border: 2px white dashed;
+}
+
+@media (max-height: 728px) {
+  .title {
+    font-size: 2em;
+  }
+  .App {
+    font-size: 0.8em;
+  }
+
+  .menu {
+    width: 40vw;
+    height: 70vh;
+  }
+
+  .video-wrapper {
+    width: 45vw;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1200px) and (orientation: portrait) {
+  .content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu {
+    width: 80vw;
+    height: fit-content;
+  }
+
+  .video-wrapper {
+    margin-top: 5px;
+    width: 80vw;
+    height: 35vh;
+  }
+}
+
+@media (min-height: 726px) and (orientation: landscape) {
+  .menu {
+    height: 50vh;
+  }
+
+  .video-wrapper {
+    height: 50vh;
+  }
+
+  * {
+    font-size: 2vh;
+  }
+}
+
+@media (max-height: 726px) and (orientation: landscape) {
+    .menu {
+      height: 75vh;
+    }
+
+    .video-wrapper {
+      height: 75vh;
+    }
+
+    * {
+      font-size: 2.25vh;
+    }
+}

@@ -1,0 +1,14 @@
+p {
+    text-align: center;
+    font-size: 1em+1vw;
+}
+
+p:last-of-type{
+    margin-top: auto;
+}
+
+.text-content {
+    font-style: italic;
+    font-size: 1em;
+}
+

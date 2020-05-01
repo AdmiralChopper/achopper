@@ -1,0 +1,23 @@
+#jump-to-timestamp {
+    padding: 5px;
+    outline: none;
+    font-size: 1em;
+    background: none;
+    color: white;
+    border: 1px white solid;
+    box-shadow: 2px 2px black;
+    transition: box-shadow;
+}
+
+#jump-to-timestamp:hover {
+    box-shadow: inset 0px 0px 2px 1px white;
+}
+
+#jump-to-timestamp:active {
+    box-shadow: 0px 0px white;
+    transform: translateY(1px);
+}
+
+.fa-forward {
+    color: red;
+}

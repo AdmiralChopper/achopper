@@ -1,0 +1,21 @@
+#update-quote {
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    font-size: 1em;
+    background: none;
+    color: white;
+    border: 1px white solid;
+    box-shadow: 2px 2px black;
+    transition: box-shadow;
+}
+
+#update-quote:hover {
+    box-shadow: inset 0px 0px 2px 1px white;
+}
+
+#update-quote:active {
+    box-shadow: 0px 0px white;
+    transform: translateY(1px);
+}

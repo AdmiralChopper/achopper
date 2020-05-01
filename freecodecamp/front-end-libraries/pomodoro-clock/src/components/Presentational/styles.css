@@ -1,0 +1,55 @@
+.main-container {
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  
+  
+  .menu {
+    margin: 10px 5px 10px 5px;
+  }
+  
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .label {
+    text-align: center;
+  }
+  
+  button {
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    margin: 0px 8px 0px 8px;
+    color: #a8ff75;
+  }
+
+  button:disabled {
+    cursor: default;
+    color: gray;
+  }
+
+  #session-length, #break-length {
+    width: 90px;
+    text-align: center;
+  }

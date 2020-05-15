@@ -1,0 +1,62 @@
+h1 {
+  border-bottom: 2px white solid;
+  margin-bottom: 5px;
+}
+
+h2 {
+  border-bottom: 1px white solid;
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+pre {
+  margin: 15px 5px;
+  background-color: #3b0529;
+  height: fit-content;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+code {
+  letter-spacing: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+  background-color: #3b0529;
+  font-size: min(1.5vh, 1.5vw);
+}
+
+blockquote {
+  margin: 20px;
+  border: 2px gray solid;
+  font-style: italic;
+}
+
+th {
+  padding: 3px;
+  font-style: bold;
+  text-align: center;
+  border: 1px white solid;
+}
+
+td {
+  padding: 3px;
+  text-align: center;
+  border: 1px white solid;
+}
+
+li {
+  margin-left: 5%;
+}
+
+img {
+  width: min(100%, 250px);
+  height: auto;
+}
+
+.preview {
+  padding: 10px;
+  font-size: min(2vh, 2vw);
+}
